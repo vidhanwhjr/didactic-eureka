@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hand gesture app</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+        <h3 class="btn btn-warning heading"> GESTURE DETECTING WEBAPP
+            <br>
+            <span>&#9994;</span>
+            <span>&#9996;</span>
+            <span>&#128075;</span>
+            <span> &#129304;</span>
+        </h3>
+        <br>
+        <b>"Take a selfie of a hand gesture you want the app to guess"</b>
+        <br>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label> Webcam view -</label>
+            <div id="Webcam_view">  </div>
+            <br><br>
+            <button class="btn btn-primary" onclick="snap()"> Take picture</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12"> 
+            <label> Prediciton-</label>
+            <p class="hand_gesure_name" id="result_hand_gesture"></p>
+            <p class="hand_gesture" id="result_hand_gesture_emoji"></p>
+        </div>
+        <br>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label> Snapshot -</label>
+            <div id="Snap_view">  </div>
+            <br><br>
+            <button class="btn btn-success" onclick="check()"> Predict hand gesture</button>
+        </div>
+        </center>
+    </body>
+    <script src="main.js"></script>
+</html>

@@ -1,0 +1,36 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 30px;
+}
+#Webcam_view , #Snap_view
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name 
+{
+  color: black;
+}
+.hand_gesure_name
+{
+  font-size: 40px;
+}
+.hand_gesture
+{
+  font-size:48px;
+}
+label{
+  background-color: green;
+  color: orange;
+  padding:10px;
+  border-radius: 90px;
+}
+h3{
+    letter-spacing: 6px;
+}
